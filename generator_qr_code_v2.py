@@ -4,6 +4,7 @@ import pathlib
 import datetime
 
 window= tk.Tk()
+window.title('Générateur de QR Code')
 
 canvas = tk.Canvas(window, width = 400, height = 300)
 canvas.pack()
@@ -44,8 +45,5 @@ def generatorQrCode():
     
 button = tk.Button(text='Générer le QR Code', command=generatorQrCode)
 canvas.create_window(200, 160, window=button)
-
-
-
 
 window.mainloop()
